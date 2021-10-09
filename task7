@@ -1,0 +1,8 @@
+#!/bin/bash
+
+ansName="emails.lst"
+for fileName in etc/*
+do
+     grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b" $fileName >> $ansName
+done
+

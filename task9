@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ans=0
+for fileName in /var/log/*.log
+do
+ans+=$(wc -l $fileName)
+done
+echo ans
+
